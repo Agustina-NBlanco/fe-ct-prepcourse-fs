@@ -1,8 +1,20 @@
 function productoEntreNúmeros(a, b) {
   // Dados dos argumentos "a" y "b", devuelve el producto de todos
   // los números entre a y b (inclusive).
-  // Tu código:
- return a * b
+  // Tu código: 
+  let acumulador = 1;
+  for (let i = a; 1 <= b; i++){
+    acumulador *= i;
+  }
+  
+  if (Math.min(a, b) <= 0){
+    return 0;
+  }
+  
+
+
+  return acumulador;
+
 }
 
 module.exports = productoEntreNúmeros;
